@@ -1,19 +1,26 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
-
+import MainLayout from './layouts/MainLayout';
+import Hero from './sections/Hero';
+import About from './sections/About';
+import Skills from './sections/Skills';
+import Projects from './sections/Projects';
+import Github from './sections/Github';
+import Contact from './sections/Contact';
+import AISign from './sections/AISign';
+import Footer from './components/common/Footer';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <div className="min-h-screen bg-green-600 flex items-center justify-center">
-      <h1 className="text-5xl font-bold text-white">
-        Welcome to Nithesh's World
-      </h1>
-    </div>
+    <MainLayout>
+      <Hero />
+      <About />
+      <Skills />
+      <Projects />
+      <Github />
+      <Contact />
+      <AISign />
+      <Footer />
+    </MainLayout>
   );
 }
 
-export default App
+export default App;

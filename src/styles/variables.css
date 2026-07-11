@@ -1,0 +1,114 @@
+:root {
+  /* ==========================================================
+     COLORS
+     ========================================================== */
+
+  /* Base */
+  --color-void: #14170f;
+  --color-surface: #1f2417;
+  --color-stone: #3d3d35;
+
+  /* Text */
+  --color-parchment: #f1ead9;
+  --color-parchment-muted: #b8ae98;
+
+  /* Minecraft Material Palette */
+  --color-grass: #5b8c3e;
+  --color-grass-light: #74a854;
+  --color-grass-dark: #436b2c;
+
+  --color-dirt: #7a4b28;
+  --color-dirt-light: #8f5c34;
+  --color-dirt-dark: #5c391e;
+
+  --color-diamond: #5fd8d0;
+  --color-diamond-light: #8ee6e0;
+  --color-diamond-dark: #3fb0a8;
+
+  --color-gold: #e3b23c;
+  --color-gold-light: #edc766;
+  --color-gold-dark: #b98a24;
+
+  --color-redstone: #c1443a;
+  --color-redstone-light: #d66459;
+  --color-redstone-dark: #98332b;
+
+  /* ==========================================================
+     TYPOGRAPHY
+     ========================================================== */
+
+  --font-display: "Press Start 2P", system-ui, sans-serif;
+  --font-body: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+
+  --text-display-sm: 1.1rem;
+  --text-display-md: 1.6rem;
+  --text-display-lg: 2.2rem;
+  --text-display-xl: clamp(2rem, 5vw, 3.25rem);
+
+  /* ==========================================================
+     SPACING (8px Grid)
+     ========================================================== */
+
+  --space-block: 0.5rem;
+  --space-block-2: 1rem;
+  --space-block-3: 1.5rem;
+  --space-block-4: 2rem;
+  --space-block-6: 3rem;
+  --space-block-8: 4rem;
+
+  /* ==========================================================
+     LAYOUT
+     ========================================================== */
+
+  --max-width: 1200px;
+  --navbar-height: 72px;
+
+  --section-padding-x: 1.5rem;
+  --section-padding-y: 6rem;
+
+  /* ==========================================================
+     BORDERS & RADIUS
+     ========================================================== */
+
+  --radius-none: 0;
+  --radius-sm: 2px;
+
+  --border-light: rgba(255, 255, 255, 0.15);
+  --border-dark: rgba(0, 0, 0, 0.35);
+
+  /* ==========================================================
+     SHADOWS
+     ========================================================== */
+
+  --shadow-bevel-out:
+    inset 2px 2px 0 rgba(255, 255, 255, 0.25),
+    inset -2px -2px 0 rgba(0, 0, 0, 0.35);
+
+  --shadow-bevel-in:
+    inset -2px -2px 0 rgba(255, 255, 255, 0.18),
+    inset 2px 2px 0 rgba(0, 0, 0, 0.4);
+
+  /* ==========================================================
+     LAYERING
+     ========================================================== */
+
+  --z-navbar: 100;
+  --z-overlay: 500;
+  --z-loading: 9999;
+
+  /* ==========================================================
+     MOTION
+     ========================================================== */
+
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+
+  --duration-fast: 150ms;
+  --duration-base: 300ms;
+  --duration-slow: 600ms;
+}

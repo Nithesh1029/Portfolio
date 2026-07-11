@@ -1,0 +1,148 @@
+/* Bevel system — Minecraft raised/pressed block edges */
+.bevel-out {
+  box-shadow: var(--shadow-bevel-out);
+}
+
+.bevel-in {
+  box-shadow: var(--shadow-bevel-in);
+}
+
+.border-pixel {
+  border: 2px solid var(--color-stone);
+}
+
+.border-pixel-diamond {
+  border: 2px solid var(--color-diamond);
+}
+
+/* Crisp rendering for pixel-art sprites/icons */
+.pixelated {
+  image-rendering: pixelated;
+}
+
+/* Focus & selection */
+:focus-visible {
+  outline: 3px solid var(--color-diamond);
+  outline-offset: 2px;
+}
+
+::selection {
+  background-color: var(--color-gold);
+  color: var(--color-void);
+}
+
+/* Skip link */
+.skip-link {
+  position: absolute;
+  left: var(--space-block-2);
+  top: -4rem;
+  z-index: var(--z-overlay);
+  background-color: var(--color-gold);
+  color: var(--color-void);
+  font-family: var(--font-body);
+  font-weight: 600;
+  padding: var(--space-block) var(--space-block-2);
+  border-radius: var(--radius-sm);
+  transition: top var(--duration-fast) var(--ease-out);
+}
+
+.skip-link:focus {
+  top: var(--space-block-2);
+}
+
+/* Keyframes */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes floatCloud {
+  from {
+    transform: translateX(-10%);
+  }
+  to {
+    transform: translateX(110%);
+  }
+}
+
+@keyframes waveGrass {
+  0%,
+  100% {
+    transform: rotate(-1.5deg);
+  }
+  50% {
+    transform: rotate(1.5deg);
+  }
+}
+
+@keyframes fillBar {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes pulseGlow {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.6;
+  }
+}
+
+@keyframes twinkle {
+  0%,
+  100% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+/* Animation utility classes */
+.anim-fade-in-up {
+  animation: fadeInUp var(--duration-slow) var(--ease-out) both;
+}
+
+.anim-float-cloud {
+  animation: floatCloud 40s linear infinite;
+}
+
+.anim-wave-grass {
+  animation: waveGrass 3s ease-in-out infinite;
+}
+
+.anim-fill-bar {
+  animation: fillBar 1s ease-out forwards;
+}
+
+.anim-pulse-glow {
+  animation: pulseGlow 2s ease-in-out infinite;
+}
+
+.anim-twinkle {
+  animation: twinkle 2.5s ease-in-out infinite;
+}
+
+/* Respect reduced-motion preference globally */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
