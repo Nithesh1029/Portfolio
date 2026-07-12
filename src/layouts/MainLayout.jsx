@@ -1,6 +1,6 @@
 import { useLenis } from '../hooks/useLenis';
 import LoadingScreen from '../components/common/LoadingScreen';
-import Navbar from '../components/common/Navbar';
+import Navbar from '../components/common/NavBar';
 
 const MainLayout = ({ children }) => {
   useLenis();
