@@ -2,6 +2,7 @@ import { FaGithub, FaLinkedin, FaEnvelope, FaFileAlt } from 'react-icons/fa';
 import PixelButton from './PixelButton';
 import { socials } from '../../data/socials';
 import { siteConfig } from '../../data/site';
+import Grass from '../effects/Grass';
 
 const iconMap = {
   Email: FaEnvelope,
@@ -48,6 +49,7 @@ const Footer = () => {
           © {year} {siteConfig.name}. Made with React + Tailwind.
         </p>
       </div>
+      <Grass className="opacity-30" />
     </footer>
   );
 };

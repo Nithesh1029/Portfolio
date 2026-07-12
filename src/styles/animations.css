@@ -30,10 +30,10 @@
 
 @keyframes fillBar {
   from {
-    width: 0%;
+    transform: scaleX(0);
   }
   to {
-    width: 100%;
+    transform: scaleX(1);
   }
 }
 
@@ -71,7 +71,7 @@
   animation-name: floatCloud;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
-  /* duration comes from inline style per-cloud; this is just a safe fallback */
+  
   animation-duration: 60s;
 }
 
@@ -80,6 +80,7 @@
 }
 
 .anim-fill-bar {
+  transform-origin: left;
   animation: fillBar 1s ease-out forwards;
 }
 

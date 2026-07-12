@@ -19,7 +19,7 @@ const Hero = () => {
       <Clouds className='opacity-20' />
       <Stars/>
       <Mountains className="opacity-20" />
-      <Grass />
+      
 
       <div className="container relative z-10 flex flex-col items-center text-center gap-[var(--space-block-4)] pb-[var(--space-block-8)]">
         <p className="font-[family-name:var(--font-display)] text-xs text-[var(--color-diamond)] tracking-wide">

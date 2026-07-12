@@ -15,11 +15,12 @@ const Contact = () => {
           title="Get In Touch"
           subtitle="Let's trade ideas, collaborate on projects, or simply say hello."
           level={2}
+          className='mb-10'
         />
 
         <div id="contact-heading" className="sr-only" />
 
-        {/* Village Notice Board */}
+        
         <PixelCard
           className="
             relative
@@ -32,11 +33,11 @@ const Contact = () => {
             overflow-hidden
           "
         >
-          {/* Wooden Planks */}
+          
           <div className="absolute top-0 left-0 right-0 h-3 bg-[var(--color-dirt-light)] opacity-40" />
           <div className="absolute bottom-0 left-0 right-0 h-3 bg-[var(--color-dirt-dark)] opacity-50" />
 
-          {/* Board Title */}
+          
           <div className="text-center py-[var(--space-block-3)] border-b-2 border-[var(--color-dirt-dark)]">
             <h3 className="font-[family-name:var(--font-display)] text-sm text-[var(--color-gold)] tracking-widest">
               CONTACT DIARY
