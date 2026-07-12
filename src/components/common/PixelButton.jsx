@@ -8,9 +8,9 @@ const VARIANT_CLASSES = {
 };
 
 const SIZE_CLASSES = {
-  sm: 'px-[var(--space-block-2)] py-[var(--space-block)] text-xs',
-  md: 'px-[var(--space-block-3)] py-[var(--space-block-2)] text-sm',
-  lg: 'px-[var(--space-block-4)] py-[var(--space-block-2)] text-base',
+  sm: 'px-5 py-2 text-xs',
+  md: 'px-3 py-2 text-sm',
+  lg: 'px-8 py-3 text-base',
 };
 
 const PixelButton = forwardRef(function PixelButton(

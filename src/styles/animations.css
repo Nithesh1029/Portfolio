@@ -11,10 +11,10 @@
 
 @keyframes floatCloud {
   from {
-    transform: translateX(-10%);
+    transform: translateX(0);
   }
   to {
-    transform: translateX(110%);
+    transform: translateX(calc(100vw + 1400px));
   }
 }
 
@@ -68,7 +68,11 @@
 }
 
 .anim-float-cloud {
-  animation: floatCloud 40s linear infinite;
+  animation-name: floatCloud;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  /* duration comes from inline style per-cloud; this is just a safe fallback */
+  animation-duration: 60s;
 }
 
 .anim-wave-grass {

@@ -1,12 +1,12 @@
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 
 export const socials = [
-  {
-    label: 'Email',
-    href: 'mailto:niteshpoojary1029@gmail.com',
-    icon: FaEnvelope,
-    display: 'niteshpoojary1029@gmail.com',
-  },
+{
+  label: 'Email',
+  href: 'mailto:niteshpoojary1029@gmail.com?subject=Portfolio%20Inquiry',
+  icon: FaEnvelope,
+  display: 'niteshpoojary1029@gmail.com',
+},
   {
     label: 'GitHub',
     href: 'https://github.com/Nithesh1029',

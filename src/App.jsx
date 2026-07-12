@@ -7,6 +7,7 @@ import Github from './sections/Github';
 import Contact from './sections/Contact';
 import AISign from './sections/AISign';
 import Footer from './components/common/Footer';
+import  Clouds from './components/effects/Clouds'
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <AISign />
       <Footer />
     </MainLayout>
+    // <Clouds/>
   );
 }
 

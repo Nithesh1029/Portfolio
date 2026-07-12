@@ -4,6 +4,7 @@ import ScrollIndicator from '../components/common/ScrollIndicator';
 import Clouds from '../components/effects/Clouds';
 import Mountains from '../components/effects/Mountains';
 import Grass from '../components/effects/Grass';
+import Stars from '../components/effects/Stars';
 
 const RESUME_URL = '/resume.pdf';
 const GITHUB_URL = 'https://github.com/Nithesh1029';
@@ -15,8 +16,9 @@ const Hero = () => {
       aria-label="Introduction"
       className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden bg-gradient-to-b from-[var(--color-diamond-dark)]/20 via-[var(--color-void)] to-[var(--color-void)]"
     >
-      <Clouds />
-      <Mountains className="opacity-80" />
+      <Clouds className='opacity-20' />
+      <Stars/>
+      <Mountains className="opacity-20" />
       <Grass />
 
       <div className="container relative z-10 flex flex-col items-center text-center gap-[var(--space-block-4)] pb-[var(--space-block-8)]">
@@ -26,6 +28,7 @@ const Hero = () => {
 
         <h1 className="font-[family-name:var(--font-display)] text-[var(--text-display-xl)] text-[var(--color-parchment)]">
           Nithesh B Poojary
+
         </h1>
 
         <p className="font-[family-name:var(--font-body)] text-lg text-[var(--color-parchment-muted)]">
@@ -38,8 +41,10 @@ const Hero = () => {
         </p>
 
         <div className="flex flex-wrap items-center justify-center gap-[var(--space-block-3)] mt-[var(--space-block-2)]">
-          <PixelButton href="#projects" variant="primary">
+
+          <PixelButton href="#projects"  variant="primary">
             View Projects
+            
           </PixelButton>
           <PixelButton href={GITHUB_URL} external variant="secondary" icon={FaGithub}>
             GitHub
