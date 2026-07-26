@@ -1,4 +1,5 @@
 export const projects = [
+
   {
     id: 'typing-speed-test',
     title: 'Typing Speed Test',
@@ -10,6 +11,17 @@ export const projects = [
     image: '/type.png',
     status: null,
   },
+    {
+  id: 'gopt',
+  title: 'GOPT',
+  description:
+    'A Windows command-line process optimizer built with C# and .NET. It scans and classifies running processes, monitors system resources in real time, and safely optimizes background processes using a rule-based engine.',
+  tech: ['C#', '.NET 10', 'System.Diagnostics', 'JSON'],
+  github: 'https://github.com/Nithesh1029/Gopt/releases/tag/v1.0.0',
+  demo: null,
+  image: '/gopt.png',
+  status: null,
+},
   {
   id: 'job-tracker',
   title: 'Job Tracker',
